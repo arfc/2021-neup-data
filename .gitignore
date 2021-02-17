@@ -1,0 +1,8 @@
+*.ist
+*.out
+title.aux
+*.glo
+*.bbl
+*.acn
+*.blg
+*.log

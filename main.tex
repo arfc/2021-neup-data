@@ -1,3 +1,9 @@
+\section*{Introduction}
+Micro-reactors have the potential to be a transformative distributed energy technology that can revolutionize America's energy infrastructure.
+Their small size enables extreme flexibility in the application and location for their deployment.
+This project seeks to quantify the opportunities and challenges of operating micro-rectors in populated, decentralized power generation environments, and the potential for deployment in established micro-grids with diverse power generation sources.
+The University of Illinois at Urbana-Champaign (UIUC) campus will be used as the demonstration site to analyze hypothetical micro-reactor systems with actual real-time and historical data.
+
 \section{Task 1.1: Data Mining and Interface}
 
 The University of Illinois at Urbana-Champaign (UIUC) has a vast amount of
@@ -5,7 +11,7 @@ data that can be used to understand patterns and trends at a deep level. Table \
 Before the data from UIUC Facilities and Services (F\&S) can be used, it must
 be checked for data flagged as ``unreliable'' or otherwise incorrect values.
 The first step in this data processing is shown in Figure \ref{fig:unreliable}
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{unreliable}
   \caption{Some of the campus data has been flagged as unreliable. This usually caused by instrument failure.}
@@ -25,7 +31,7 @@ that allows us to guess a demand based on the temperature. Figure
 temperature on campus.
 
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{demandtempcorr}
   \caption{The correlation and best fit line for campus demand and wet bulb
@@ -33,14 +39,14 @@ temperature on campus.
   \label{fig:tempcorrelation}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{demandtempfreq}
   \caption{Show the frequency peaks after taking the Fourier transform of data.}
   \label{fig:demandfreq}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{yearlytrends}
   \caption{Show the yearly trends for demand and temperature on campus.}
@@ -59,28 +65,28 @@ delivered to the campus. These typical years are useful for generating synthetic
 data, also with the \texttt{RAVEN} tool, that can be used for energy system
 optimization with \texttt{Modelica} \cite{epiney_report_2017, baker_optimal_2018}. Figure \ref{fig:synelc} demonstrates this capability.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{typicalsteam}
   \caption{A typical year of hourly steam demand on the UIUC campus}
   \label{fig:typstm}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{typicaldemand}
   \caption{A typical year of hourly electricity demand on the UIUC campus}
   \label{fig:typelc}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{typicalwind}
   \caption{A typical year of hourly wind energy supplied to the UIUC campus}
   \label{fig:typwind}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{typicalsolar}
   \caption{A typical year of hourly solar energy supplied to the UIUC campus}
@@ -88,7 +94,7 @@ optimization with \texttt{Modelica} \cite{epiney_report_2017, baker_optimal_2018
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{syntypdemand}
   \caption{A typical year of hourly electricity demand on the UIUC campus}
@@ -103,7 +109,7 @@ by either electric or hydrogen powered vehicles in the future. Figure
 \ref{fig:fueldemand} shows the demand for three different fuel types on the UIUC
 campus.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{uiuc_fueldemand}
   \caption{The demand for three types of fuel for one year on the UIUC campus.}
